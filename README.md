@@ -16,3 +16,6 @@ local ubuntu or docker
     uvicorn main:app1 --reload --port 8000
     uvicorn main:app2 --reload --port 8080
     sudo service nginx restart
+# Khoi chay tren docker
+docker-compose --file docker-compose.yml up <nếu muốn có cache>
+docker-compose --file docker-compose.nocache.yml up <nếu ko muốn có cache>
