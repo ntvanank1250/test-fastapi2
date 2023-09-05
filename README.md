@@ -13,5 +13,6 @@ local ubuntu or docker
 - copy file default-local to /etc/nginx/sites-enabled/default
 
 /// run 2 server ///
-uvicorn main:app1 --reload --port 8000////uvicorn main:app2 --reload --port 8080
-sudo service nginx restart
+    uvicorn main:app1 --reload --port 8000
+    uvicorn main:app2 --reload --port 8080
+    sudo service nginx restart
